@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Trabalho Desenvolvimento Web">
+    <meta name="author" content="Gustavo Ferreira">
+    <script src="https://kit.fontawesome.com/28fe38f80d.js" crossorigin="anonymous"></script>
+    <script src="cadastrojs.js"></script>
+    <!--css bootstrap inicio-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--css bootstrap fim-->
+    <link rel="stylesheet" href="style.css">
+    <title>Treinador</title>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <!--inicio cabeçalho com logo e barra de navegação-->
+        <div class="row navbar-logo">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-1 logo">
+                <a class="flex-sm-fill text-sm-center nav-link" href="home.html">
+                    <img src="https://i.im.ge/2022/11/14/SugvyP.pokedex-logo.png" alt="logo Pokedex" class="logo">
+                </a>
+            </div>
+
+            <div class="col-8 col-sm-10 col-md-10 col-lg-11  navbar">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <div class="menu"></div>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="home.html">Home</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="pokedex.html">Pokedex</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="iniciais.html">Iniciais</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="tipos.html">Tipos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="atributos.html">Atributos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="lendarios.html">Lendarios</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="jogos.html">Jogos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="#"><i
+                            class="fa-solid fa-user"></i>Treinador</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="cadastro.html">Cadastro</a>
+                </nav>
+            </div>
+        </div>
+        </div>
+        <!-- fim cabeçalho com logo e barra de navegação-->
+    </header>
+
+    <!-- Tela de Login-->
+    <main class="container main">
+        <div class="row treinador">
+            <div class="col-4 Tela-login" id="login">
+                <h1>Login</h1>
+                <form>
+                    <input type="text" placeholder="Email" id="email">
+                    <br><br>
+                    <input type="password" placeholder="Senha" id="senha">
+                    <br><br>
+                    <button type="submit" onclick="logar(); return false">Logar</button>
+                </form>
+            </div>
+            <div class="col-12" id="perfil">
+                <div class="row">
+                    <!--left col-->
+                    <div class="col-sm-12">
+                        <br>
+                        <button class="btn btn-lg btn-secondary" id="btnEditar" type="button" onclick="editaPerfil()">Editar</button>
+                        <div class="text-center" id="imagemAvatar">
+                            <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                                class="avatar img-circle img-thumbnail" alt="avatar">
+                        </div>
+                        </hr><br>
+                    </div>
+                    <!--/col-3-->
+                    <div class="col-sm-12">
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="home">
+                                <hr>
+                                <form class="form" action="##" method="post" id="paginaDePerfil">
+                                    <div class="form-group">
+                                        <div class="col-xs-6" id="perfilNomeTreinador">
+                                            <label for="first_name">
+                                                <h4>Nome do Treinador</h4>
+                                            </label>
+                                            <input type="text" class="form-control" name="perfilNomeTreinador"
+                                                 placeholder="insira o nome" id="nomePerfil">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+
+                                        <div class="col-xs-6" id="perfilInicialfav">
+                                            <label for="inicial-favorito">
+                                                <h4>Inicial Favorito</h4>
+                                            </label>
+                                            <select class="form-control form-select" aria-label="Default select example" id="perfilInicialFavorito" disabled>
+                                                <option value="0" selected>SEM PREFERÊNCIA</option>
+                                                <option value="1">BULBASAUR</option>
+                                                <option value="2">CHARMANDER</option>
+                                                <option value="3">SQUIRTLE</option>
+                                                <option value="4">CHIKORITA</option>
+                                                <option value="5">CYNDAQUIL</option>
+                                                <option value="6">TOTODILE</option>
+                                                <option value="7">TREECKO</option>
+                                                <option value="8">TORCHIC</option>
+                                                <option value="9">MUDKIP</option>
+                                                <option value="10">TURTWIG</option>
+                                                <option value="11">CHIMCHAR</option>
+                                                <option value="12">PIPLUP</option>
+                                                <option value="13">SNIVY</option>
+                                                <option value="14">TEPIG</option>
+                                                <option value="15">OSHAWOTT</option>
+                                                <option value="16">CHESPIN</option>
+                                                <option value="17">FENNEKIN</option>
+                                                <option value="18">FROAKIE</option>
+                                                <option value="19">ROWLET</option>
+                                                <option value="20">LITTEN</option>
+                                                <option value="21">POPPLIO</option>
+                                                <option value="22">GROOKEY</option>
+                                                <option value="23">SCORBUNNY</option>
+                                                <option value="24">SOBBLE</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6" id="perfilJogoFav">
+                                            <label for="inicial-favorito">
+                                                <h4>Jogo Favorito</h4>
+                                            </label>
+                                            <select class="form-control form-select" aria-label="Default select example" id="perfilGameFav" disabled>
+                                                <option value="0" selected>SEM PREFERÊNCIA</option>
+                                                <option value="1">POKEMON RED/BLUE/YELLOW</option>
+                                                <option value="2">POKEMON FIRE RED/LEAF GREEN</option>
+                                                <option value="3">POKEMON LET'S GO PIKACHU/EEVEE</option>
+                                                <option value="4">POKEMON GOLD/SILVER/CRYSTAL</option>
+                                                <option value="5">POKEMON HEART GOLD/SOUL SILVER</option>
+                                                <option value="6">POKEMON RUBY/SAPHIRE/EMERALD</option>
+                                                <option value="7">POKEMON OMEGA RUBY/ALPHA SAPHIRE</option>
+                                                <option value="8">POKEMON DIAMOND/PEARL/PLATINUM</option>
+                                                <option value="9">POKEMON BRILLIANT DIAMOND/SHINING PEARL</option>
+                                                <option value="10">POKEMON BLACK/WHITE</option>
+                                                <option value="11">POKEMON BLACK 2/WHITE 2</option>
+                                                <option value="12">POKEMON X/Y</option>
+                                                <option value="13">POKEMON SUN/MOON</option>
+                                                <option value="14">POKEMON Ultra SUN/MOON</option>
+                                                <option value="15">POKEMON SWORD/SHIELD</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6" id="perfiltipoFav">
+                                            <label for="tipo-favorito">
+                                                <h4>Tipo Favorito</h4>
+                                            </label>
+                                            <select class="form-control form-select"
+                                                aria-label="Default select example" id="perfiltipofav" disabled>
+                                                <option value="0" selected>SEM PREFERÊNCIA</option>
+                                                <option value="1">NORMAL</option>
+                                                <option value="2">FIRE</option>
+                                                <option value="3">WATER</option>
+                                                <option value="4">GRASS</option>
+                                                <option value="5">ELECTRIC</option>
+                                                <option value="6">ICE</option>
+                                                <option value="7">FIGHTING</option>
+                                                <option value="8">POISON</option>
+                                                <option value="9">GROUND</option>
+                                                <option value="10">FLYING</option>
+                                                <option value="11">PSYCHIC</option>
+                                                <option value="12">BUG</option>
+                                                <option value="13">GHOST</option>
+                                                <option value="14">DRAGON</option>
+                                                <option value="15">DARK</option>
+                                                <option value="16">STEEL</option>
+                                                <option value="17">FAIRY</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <div class="col-xs-6" id="perfilPlatfav">
+                                            <label for="Plataforma">
+                                                <h4>Plataforma aonde jogo</h4>
+                                            </label>
+                                            <select class="form-control form-select"
+                                                aria-label="Default select example" id="perfilplat" disabled>
+                                                <option value="0" selected>SEM PREFERÊNCIA</option>
+                                                <option value="1">COMPUTADOR</option>
+                                                <option value="2">PORTÁTIL DA NINTENDO</option>
+                                                <option value="3">CELULAR</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <br>
+                                            <button class="btn btn-lg btn-success" id="btnSalvar" type="button" onclick="salva()">Salvar</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        <!--/tab-pane-->
+                    </div>
+                    <!--/tab-content-->
+                </div>
+                <!--/col-9-->
+            </div>
+        </div>
+    </main>
+
+    <!-- Fim Tela de Login-->
+
+    <!-- Rodapé -->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-12">
+                <h1>Sobre</h1>
+                <p>Guia feito pelos Alunos do primeiro periodode Sistema de informação da PUC MINAS SÃO GABRIEL para o
+                    trabalho Intersdisciplinar: Aplicações Web</p>
+                <p>Copyright 2022 - Disciplina de Desenvolvimento Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fim rodapé-->
+
+    <!--JS bootstrap inicio-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
+J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-
+Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-
+wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--JS bootstrap Fim-->
+</body>
+
+</html>

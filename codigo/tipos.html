@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Trabalho Desenvolvimento Web">
+    <meta name="author" content="Gustavo Silvino">
+    <script src="https://kit.fontawesome.com/28fe38f80d.js" crossorigin="anonymous"></script>
+    <!--css bootstrap inicio-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous">
+    <!--css bootstrap fim-->
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+<header class="container-fluid header">
+    <!--inicio cabeçalho com logo e barra de navegação-->
+    <div class="row navbar-logo">
+        <div class="col-3 col-sm-2 col-md-2 col-lg-1 logo">
+            <a class="flex-sm-fill text-sm-center nav-link" href="home.html">
+                <img src="https://i.im.ge/2022/11/14/SugvyP.pokedex-logo.png" alt="logo Pokedex" class="logo">
+            </a>
+        </div>
+
+        <div class="col-8 col-sm-10 col-md-10 col-lg-11  navbar">
+            <nav class="nav nav-pills flex-column flex-sm-row">
+                <div class="menu"></div>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="home.html">Home</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="pokedex.html">Pokedex</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="iniciais.html">Iniciais</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="tipos.html">Tipos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="atributos.html">Atributos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="lendarios.html">Lendarios</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="jogos.html">Jogos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="treinador.html"><i class="fa-solid fa-user"></i> Treinador</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="cadastro.html">Cadastro</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- fim cabeçalho com logo e barra de navegação-->
+</header>
+<main class="container main">
+    <div class="pagina-tipos">
+        <div class="row">
+            <div class="col-12 texto">
+                <h1>O que é um Tipo?</h1>
+                <p>Tipo no mundo Pokémon são basicamente classificações dadas de acordo com o respectivo "elemento" que o Pokemon possui.</p>
+                <p>
+                    Cada Elemento possui uma vantagens e Desvantagens sobre outros Elementos,
+                    ou seja, um tipo consegue dar mais dano em outro tipo,
+                    ao mesmo tempo que dá menos dano sobre outro tipo,
+                    e existem tipos que são imunes a outros tipos, recebendo dano nenhum.
+                </p>
+
+                <p>Não são apenas os Pokémon que possuem tipos.
+                   Todos os movimentos que um Pokémon pode utilizar em batalha também são classificados a partir de um tipo específico.
+                </p>
+                <p>
+                    É a combinação dos Tipos dos movimentos e o Tipo do Pokémon que definem as Vantagens e Desvantagens em Pokémon.
+                    Em Batalhas Pokémon, os treinadores buscam utilizar um Pokémon com movimentos que possuem vantagem de tipo sobre o outro Pokémon.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 texto">
+                <h1>Os Tipos dos Pokémon - Vantagens e Desvantagens</h1>
+                <p> 
+                    Atualmente, existem 18 tipos de Pokémon, mas nem todos existem desde a 1ª Geração de jogos.
+                    O tipo Dark (Sombrio) e o tipo Steel (Aço), por exemplo, foram introduzidos na 2ª Geração;
+                    e o tipo Fairy (Fada), por sua vez, só foi adicionado mais recentemente na 6ª Geração.
+                    Por conta disso, muitos Pokémon também sofreram alteração de tipo, como Jigglypuff e Magnemite.
+                </p>
+                <div class="col-12 imagem">
+                    <img src="https://i.im.ge/2022/11/14/SuZpgr.tipos-Pokemon.webp" alt="Tipos Pokemon" class="img-tipos">
+                </div>
+            </div>
+        </div> 
+        <div class="row texto">
+            <div class="col-5 cardtipos">
+                <h3>TIPO NORMAL (NORMAL)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRvuf.normal.png">
+                <p><strong>Super efetivo em:</strong> –<br>
+                    <strong>Pouca efetividade contra:</strong> Aço e Pedra<br>
+                    <strong>Não causa dano em:</strong> Fantasma<br>
+                    <strong>Fraquezas:</strong> Lutador<br>
+                    <strong>Resistência:</strong> –<br>
+                    <strong>Imune a:</strong> Fantasma
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3> TIPO LUTADOR (FIGHTING)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRVnq.lutador.png">
+                <p><strong>Super efetivo em:</strong> Aço, Gelo, Normal, Pedra e Sombrio<br>
+                    <strong>Pouca efetividade contra:</strong> Fada, Inseto, Psíquico, Venenoso e Voador<br>
+                    <strong>Não causa dano em:</strong> Fantasma<br>
+                    <strong>Fraquezas:</strong> Fada, Psíquico e Voador<br>
+                    <strong>Resistência: </strong>Inseto, Pedra e Sombrio<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO ÁGUA (WATER)</h3>
+                <img src="https://i.im.ge/2022/11/14/Su8EKm.agua.png">
+                <p><strong>Super efetivo em:</strong> Fogo, Pedra e Terrestre<br>
+                    <strong>Pouca efetividade contra:</strong> Água, Dragão e Planta<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Elétrico e Planta<br>
+                    <strong>Resistência:</strong> Aço, Água, Fogo e Gelo<br>
+                    <strong>Imune a:</strong> Nenhum
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO FOGO (FIRE)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRwrJ.fogo.png">
+                <p><strong>Super efetivo em:</strong> Aço, Gelo, Inseto e Planta<br>
+                    <strong>Pouca efetividade contra:</strong> Água, Dragão, Fogo e Pedra<br>
+                    <strong>Não causa dano em:</strong> Fantasma<br>
+                    <strong>Fraquezas:</strong> Água, Pedra e Terrestre<br>
+                    <strong>Resistência:</strong> Aço, Fada, Fogo, Gelo, Inseto e Planta<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO PLANTA (GRASS)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRBQW.planta.png">
+                <p><strong>Super efetivo em:</strong> Água, Pedra e Terrestre<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Dragão, Fogo, Inseto, Planta, Venenoso e Voador<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Fogo, Inseto e Voador<br>
+                    <strong>Resistência:</strong> Água, Elétrico, Planta e Terrestre<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO INSETO (BUG)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRCJK.inseto.png">
+                <p><strong>Super efetivo em:</strong> Sombrio, Planta e Psíquico<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Fada, Fogo, Fantasma, Lutador, Venenoso e Voador<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Fogo, Pedra e Voador<br>
+                    <strong>Resistência:</strong>Lutador, Planta e Terrestre<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO AÇO (STEEL)</h3>
+                <img src="https://i.im.ge/2022/11/14/Su8A21.aco.png">
+                <p><strong>Super efetivo em:</strong> Fada, gelo e Pedra<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Água, Elétrico e Fogo<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Fogo, Lutador e Terrestre<br>
+                    <strong>Resistência:</strong> Aço, Dragão, Fada, Gelo, Inseto, Normal, Pedra, Planta, Psíquico e Voador<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO VENENOSO (POISON)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuZH0m.venenoso.png">
+                <p><strong>Super efetivo em:</strong> Fada e Planta<br>
+                    <strong>Pouca efetividade contra:</strong> Fantasma, Pedra, Venenoso e Terrestre<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Psíquico e Terrestre<br>
+                    <strong>Resistência:</strong> Fada, Inseto, Lutador, Planta e Venenoso<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO ELÉTRICO (ELECTRIC)</h3>
+                <img src="https://i.im.ge/2022/11/14/Su8fKJ.eletrico.png">
+                <p>
+                    <strong>Super efetivo em:</strong> Água e Voador<br>
+                    <strong>Pouca efetividade contra:</strong> Dragão, Elétrico e Planta<br>
+                    <strong>Não causa dano em: </strong>Terrestre<br>
+                    <strong>Fraquezas:</strong> Terrestre<br>
+                    <strong>Resistência: </strong>Aço, Elétrico e Voador<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO VOADOR (FLYING)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuZveW.voador.png">
+                <p><strong>Super efetivo em:</strong> Inseto, Lutador e Planta<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Elétrico e Pedra<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Elétrico, Gelo e Pedra<br>
+                    <strong>Resistência:</strong> Inseto, Lutador e Planta<br>
+                    <strong>Imune a:</strong> Terrestre
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO GELO (ICE)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuR65y.gelo.png">
+                <p><strong>Super efetivo em:</strong> Dragão, Planta, Terrestre e Voador<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Água, Fogo e Gelo<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Aço, Fogo, Lutador e Pedra<br>
+                    <strong>Resistência:</strong> Gelo<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO DRAGÃO (DRAGON)</h3>
+                <img src="https://i.im.ge/2022/11/14/Su8V6a.dragao.png">
+                <p><strong>Super efetivo em:</strong> Dragão<br>
+                    <strong>Pouca efetividade contra:</strong> Aço e Fada (imune)<br>
+                    <strong>Não causa dano em: </strong>Fada<br>
+                    <strong>Fraquezas:</strong> Dragão, Fada e Gelo<br>
+                    <strong>Resistência:&nbsp;</strong>Elétrico, Fogo, Planta e Água<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO FADA (FAIRY)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuR5SG.fada.png">
+                <p><strong>Super efetivo em:</strong> Dragão, Lutador e Sombrio<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Fogo e Venenoso<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Aço e Venenoso<br>
+                    <strong>Resistência: </strong>Lutador, Inseto e Sombrio<br>
+                    <strong>Imune a:</strong> Dragão
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO TERRESTRE (GROUND)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuZV6P.terrestre.png">
+                <p><strong>Super efetivo em:</strong> Aço, Elétrico, Fogo, Pedra e Venenoso<br>
+                    <strong>Pouca efetividade contra:</strong> Inseto e Planta<br>
+                    <strong>Não causa dano em:</strong> Voador<br>
+                    <strong>Fraquezas:</strong> Água, Gelo e Planta<br>
+                    <strong>Resistência:</strong> Pedra e Venenoso<br>
+                    <strong>Imune a:</strong> Elétrico
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO PEDRA (ROCK)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRnRr.pedra.png">
+                    <p><strong>Super efetivo em:</strong> Fogo, Gelo, Inseto e Voador<br>
+                    <strong>Pouca efetividade contra:</strong> Aço, Lutador e Terrestre<br>
+                    <strong>Não causa dano em:</strong> –<br>
+                    <strong>Fraquezas:</strong> Aço, Água, Lutador, Planta e Terrestre<br>
+                    <strong>Resistência:</strong> Fogo, Normal, Venenoso e Voador<br>
+                    <strong>Imune a:</strong> –
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3> TIPO FANTASMA (FANTASMA)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuRjfa.fantasma.png">
+                <p><strong>Super efetivo em:</strong> Fantasma e Sombrio<br>
+                    <strong>Pouca efetividade contra:</strong> Inseto e Venenoso<br>
+                    <strong>Não causa dano em:</strong> Normal<br>
+                    <strong>Fraquezas:</strong> Fantasma e Sombrio<br>
+                    <strong>Resistência:</strong> Inseto e Psíquico<br>
+                    <strong>Imune a:</strong> Lutador e Normal
+                </p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3>TIPO PSÍQUICO (PSYCHIC)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuWZWJ.psiquico.png">
+                <p><strong>Super efetivo em:</strong> Lutador e Venenoso<br>
+                <strong>Pouca efetividade contra:</strong> Aço e Psíquico<br>
+                <strong>Não causa dano em:</strong> Sombrio<br>
+                <strong>Fraquezas:</strong> Fantasma, Inseto e Sombrio<br>
+                <strong>Resistência:</strong> Lutador e Psíquico<br>
+                <strong>Imune a:</strong> –</p>
+            </div>
+
+            <div class="col-5 cardtipos">
+                <h3> TIPO SOMBRIO (DARK)</h3>
+                <img src="https://i.im.ge/2022/11/14/SuWBm8.sombrio.png">
+                <p><strong>Super efetivo em:</strong> Fantasma e Psíquico<br>
+                <strong>Pouca efetividade contra:</strong> Sombrio, Fada e Lutador<br>
+                <strong>Não causa dano em:</strong> –<br>
+                <strong>Fraquezas:</strong> Inseto, Fada e Lutador<br>
+                <strong>Resistência: </strong>Sombrio e Fantasma<br>
+                <strong>Imunidade a: </strong>Psíquico
+                </p>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col-12 texto">
+                <div class="col-12 imagem">
+                    <img src="https://i.im.ge/2022/11/14/SuZfV1.tabelas-pokemon-png.png" alt="Tabela de tipos Pokemon" class="img-tabela-tipos">
+                </div>
+                <p>
+                    <strong> As linhas, representadas pelos tipos ao lado esquerdo, indicam o movimento de ataque.
+                    As colunas, por sua vez, indicam a defesa do Pokémon.</strong>
+                    Por exemplo: na linha do tipo Água há "2x" na coluna do tipo Fogo,
+                    indicando que movimentos do tipo Água têm o dano dobrado contra Pokémon do tipo Fogo.
+                    Já no caso, por exemplo, da linha do tipo Normal há um "0x" na coluna do tipo Fantasma,
+                    indicando que ataques de tipo Normal não atingem Pokémon de tipo Fantasma.
+                    Por fim, como último exemplo, pode-se observar a linha do tipo Gelo, que, na coluna do tipo fogo apresenta um "1/2x",
+                    indicando que movimentos do tipo Gelo são apenas parcialmente eficazes contra Pokémon do tipo Fogo.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 texto">
+                <h1>Tipos Duplos</h1>
+                <p>
+                    Cada Pokémon pode ter até dois tipos ao mesmo tempo, como Charizard, que é dos tipos Fogo e Voador.
+                    Nessas situações, o Pokémon passa a ser do Tipo Duplo.
+                    Já em situações em que o Pokémon apresenta somente um tipo, diz-se que ele é de Tipo Puro.
+                    Os golpes, no entanto, só podem ser de um único tipo.
+                </p>
+                <p>
+                    Quando um Pokémon possui dois tipos, suas fraquezas são calculadas levando em consideração ambos os tipos.
+                    O Charizard, por exemplo, um Pokémon de Fogo, que tem fraqueza ataques Terrestre.
+                    Porém, esse Pokémon também é do tipo Voador, e por isso, é imune a golpes tipo Terrestre.
+                </p>
+                <div class="col-12 imagem">
+                    <img src="https://i.im.ge/2022/11/14/SuWTqL.pokemon-sword-shield-charizard.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 texto">
+                <h1>Golpes STAB</h1>
+                <p>
+                    Embora a maioria dos golpes que um Pokémon possa aprender são de seu próprio tipo,
+                    também existem casos em que ele pode aprender golpes de tipos que não necessariamente pertencem a ele.
+                    Um Pokémon tipo Elétrico, por exemplo, pode ocasionalmente aprender um golpe do tipo Água
+                    (por exemplo, Pikachu pode aprender Surf em Pokémon Sword e Shield).
+                </p>
+                <p>
+                    No entanto, ao usar golpes do mesmo tipo do Pokémon aplica-se o chamado Efeito STAB (Same Type Attack Bonus),
+                    que, em tradução direta, significaria "Ataque bônus de mesmo Tipo". Na realidade, este efeito é muito simples,
+                    indicando que há um bônus de dano de 50% quando o golpe utilizado é do mesmo tipo que o Pokémon.
+                </p>
+                <p>
+                    Tanto Charizard quanto Venusaur aprendem o movimento do tipo Grass, Solar Beam (Raio Solar), que possui poder de 120.
+                    Porém, quando este movimento é utilizado por um Venusaur, que é do tipo Grass/Poison, seu poder receberá um bônus de 50%,
+                    passando a ficar com um total de 180.
+                    Isso porque o Pokémon (Venusaur) e o movimento Solar Beam tem o mesmo tipo, Grass, ou seja, ocorre o STAB.
+                </p>
+            </div>
+        </div> 
+    </div>
+</main>
+<footer class="container-fluid footer">
+    <div class="row">
+        <div class="col-12">
+            <h1>Sobre</h1>
+            <p>Guia feito pelos Alunos do primeiro periodode Sistema de informação da PUC MINAS SÃO GABRIEL para o trabalho Intersdisciplinar: Aplicações Web</p>
+            <p>Copyright 2022 - Disciplina de Desenvolvimento Web</p>
+        </div>
+    </div>
+</footer>
+
+<!--JS bootstrap inicio-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
+J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-
+Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-
+wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!--JS bootstrap Fim-->
+</body>
+</html>

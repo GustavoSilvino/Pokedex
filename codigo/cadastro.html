@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="Trabalho Desenvolvimento Web">
+    <meta name="author" content="Gustavo Ferreira">
+    <script src="https://kit.fontawesome.com/28fe38f80d.js" crossorigin="anonymous"></script>
+    <script src="cadastrojs.js"></script>
+    <!--css bootstrap inicio-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--css bootstrap fim-->
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <!--inicio cabeçalho com logo e barra de navegação-->
+        <div class="row navbar-logo">
+            <div class="col-3 col-sm-2 col-md-2 col-lg-1 logo">
+                <a class="flex-sm-fill text-sm-center nav-link" href="home.html">
+                    <img src="https://i.im.ge/2022/11/14/SugvyP.pokedex-logo.png" alt="logo Pokedex" class="logo">
+                </a>
+            </div>
+
+            <div class="col-8 col-sm-10 col-md-10 col-lg-11  navbar">
+                <nav class="nav nav-pills flex-column flex-sm-row">
+                    <div class="menu"></div>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="home.html">Home</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="pokedex.html">Pokedex</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="iniciais.html">Iniciais</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="tipos.html">Tipos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="atributos.html">Atributos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="lendarios.html">Lendarios</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="jogos.html">Jogos</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="treinador.html"><i class="fa-solid fa-user"></i>
+                        Treinador</a>
+                    <a class="flex-sm-fill text-sm-center nav-link" href="cadastro.html">Cadastro</a>
+            </div>
+            </nav>
+        </div>
+        </div>
+        <!-- fim cabeçalho com logo e barra de navegação-->
+    </header>
+    <!--Inicio Tela de cadastro -->
+    <main class="container main">
+        <div class="row">
+            <div class="col-12 cadastro">
+                <h1>Crie Sua conta</h1>
+
+                <form action="">
+                    <label for="name">
+                        <span>Nome</span>
+                        <input type="text" id="name1" name="name" class="form-control">
+                    </label>
+
+                    <label for="email">
+                        <span>E-mail</span>
+                        <input type="email" id="email1" name="email" class="form-control">
+                    </label>
+
+                    <label for="password">
+                        <span>Senha</span>
+                        <input type="password" id="password1" name="password" class="form-control">
+                    </label>
+
+                    <label for="pokemonfav">
+                        <span>Qual seu pokemon Favorito? </span>
+                        <select class="form-control form-select" aria-label="Default select example" id="pokefav1">
+                            <option value="0" selected>Sem prefêrencia</option>
+                            <option value="1">BULBASAUR</option>
+                            <option value="2">CHARMANDER</option>
+                            <option value="3">SQUIRTLE</option>
+                            <option value="4">CHIKORITA</option>
+                            <option value="5">CYNDAQUIL</option>
+                            <option value="6">TOTODILE</option>
+                            <option value="7">TREECKO</option>
+                            <option value="8">TORCHIC</option>
+                            <option value="9">MUDKIP</option>
+                            <option value="10">TURTWIG</option>
+                            <option value="11">CHIMCHAR</option>
+                            <option value="12">PIPLUP</option>
+                            <option value="13">SNIVY</option>
+                            <option value="14">TEPIG</option>
+                            <option value="15">OSHAWOTT</option>
+                            <option value="16">CHESPIN</option>
+                            <option value="17">FENNEKIN</option>
+                            <option value="18">FROAKIE</option>
+                            <option value="19">ROWLET</option>
+                            <option value="20">LITTEN</option>
+                            <option value="21">POPPLIO</option>
+                            <option value="22">GROOKEY</option>
+                            <option value="23">SCORBUNNY</option>
+                            <option value="24">SOBBLE</option>
+                        </select>
+                    </label>
+
+                    <label for="jogofav">
+                        <span>Qual seu Jogo Favorito? </span>
+                        <select class="form-control form-select" aria-label="Default select example" id="gamefav1">
+                            <option value="0" selected>Sem prefêrencia</option>
+                            <option value="1">Pokemon Red/Blue/Yellow</option>
+                            <option value="2">Fire Red/Leaf Green</option>
+                            <option value="3">Pokemon Let's Go Pikachu/Eevee</option>
+                            <option value="4">Pokemon Gold/Silver/Crystal</option>
+                            <option value="5">Pokemon Heart Gold/Soul Silver</option>
+                            <option value="6">Pokemon Ruby/Saphire/Emerald</option>
+                            <option value="7">Pokemon Omega Ruby/Aplha Saphire</option>
+                            <option value="8">Pokemon Diamond/Pearl/Platinum</option>
+                            <option value="9">Pokemon Brilliant Diamond/Shining Pearl</option>
+                            <option value="10">Pokemon Black/White</option>
+                            <option value="11">Pokemon Black 2/White 2</option>
+                            <option value="12">Pokemon X/Y</option>
+                            <option value="13">Pokemon Sun/Moon</option>
+                            <option value="14">Pokemon Ultra Sun/Moon</option>
+                            <option value="15">Pokemon Sword/Shield</option>
+                        </select>
+                    </label>
+
+                    <label for="plataforma">
+                        <span>Em qual plataforma você joga? </span>
+                        <select class="form-control form-select" aria-label="Default select example" id="plat1">
+                            <option value="0" selected>Sem prefêrencia</option>
+                            <option value="1">Computador</option>
+                            <option value="2">Portátil da Nintendo</option>
+                            <option value="3">Celular</option>
+                        </select>
+                    </label>
+
+                    <label for="tipofav">
+                        <span>Qual seu tipo de pokemon favorito? </span>
+                        <select class="form-control form-select" aria-label="Default select example" id="typefav1">
+                            <option value="0" selected>Sem prefêrencia</option>
+                            <option value="1">NORMAL</option>
+                            <option value="2">FIRE</option>
+                            <option value="3">WATER</option>
+                            <option value="4">GRASS</option>
+                            <option value="5">ELECTRIC</option>
+                            <option value="6">ICE</option>
+                            <option value="7">FIGHTING</option>
+                            <option value="8">POISON</option>
+                            <option value="9">GROUND</option>
+                            <option value="10">FLYING</option>
+                            <option value="11">PSYCHIC</option>
+                            <option value="12">BUG</option>
+                            <option value="13">GHOST</option>
+                            <option value="14">DRAGON</option>
+                            <option value="15">DARK</option>
+                            <option value="16">STEEL</option>
+                            <option value="17">FAIRY</option>
+                        </select>
+                    </label>
+
+                    <input type="button" value="Sign Up" id="buttondecadastro" class="form-control"
+                        onclick="cadastrarNovo()">
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <!--Final da Tela de cadastro -->
+
+
+    </main>
+    <!-- Rodapé -->
+    <footer class="container-fluid footer">
+        <div class="row">
+            <div class="col-12">
+                <h1>Sobre</h1>
+                <p>Guia feito pelos Alunos do primeiro periodode Sistema de informação da PUC MINAS SÃO GABRIEL para o
+                    trabalho Intersdisciplinar: Aplicações Web</p>
+                <p>Copyright 2022 - Disciplina de Desenvolvimento Web</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fim rodapé-->
+
+    <!--JS bootstrap inicio-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-
+J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-
+Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-
+wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!--JS bootstrap Fim-->
+
+</body>
+
+</html>
