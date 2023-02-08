@@ -22,10 +22,8 @@ Parabéns pelo trabalho, pessoal. Ficou completo, bem organizado, informações 
 
 ## Alunos integrantes da equipe
 
-* Diogo dos Santos Lopes
 * Gustavo Ferreira
 * Gustavo Silvino
-* Julia Fernandes Malaquias
 
 ## Professores responsáveis
 
